@@ -1,9 +1,8 @@
-title: wu-kan # 站点标题
+title: csg # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   在职|兴盛优选<br/>
   大数据工程师<br/>
   对数据库技术兴趣浓厚<br/>
-  ASC<br/>
   <a href="mailto:526270285@qq.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -102,7 +101,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                 "hidden": true,
                 "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                 "content": {
-                  "link": ["https://jekyll-theme-WuK.wu-kan.cn"],
+                  "link": ["https://shuigen.github.io"],
                   "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                   "hidden": true,
                   "custom": [{
@@ -386,7 +385,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         - | # Copyright声明
           <div>
             <i class="fas fa-copyright fa-fw"></i>
-            2017-2020 WuK
+            2017-2020 csg
           </div>
         - | # 觉得我的主题好用的话，让更多的人知道它吧！
           <div>
