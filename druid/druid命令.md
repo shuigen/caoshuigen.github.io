@@ -10,7 +10,7 @@ bin/service --down
 
 ```
 cd /opt/apache-druid-0.17.1
-nohup /opt/apache-druid-0.17.1/bin/start-nano-quickstart > log.log 2>&1 &
+nohup /opt/apache-druid-0.17.1/bin/start-nano-quickstart &
 
 
 
@@ -35,7 +35,16 @@ kafka-console-producer --broker-list 172.16.8.122:9092 --topic OCEAN_GATEWAY_INT
 
 耗时最大值，耗时最小值，耗时总时长
 
-kafka-console-consumer --bootstrap-server 172.16.7.147:31123 --from-beginning --topic OCEAN_GATEWAY_INTERFACE_STATISTICS_TOPIC
+kafka-console-consumer --bootstrap-server 10.255.18.248:9092 --from-beginning --topic test6
+
+bin/kafka-console-consumer.sh --bootstrap-server 192.168.1.44:9092,192.168.1.45:9092,192.168.1.47:9092,192.168.1.43:9092  --from-beginning --topic wxapplog_v3 --max-messages 10
+
+ bin/kafka-consumer-groups.sh --bootstrap-server 192.168.1.44:9092,192.168.1.45:9092,192.168.1.47:9092,192.168.1.43:9092  --group test_search --describe 
+
+bin/kafka-console-consumer.sh --bootstrap-server 
+ 192.168.1.34:9092 --from-beginning --topic test6 --max-messages 10
+
+bin/kafka-console-producer.sh --broker-list 10.255.18.248:9092 --topic test6
 
 
 ```
@@ -66,3 +75,21 @@ cd /opt/apache-druid-0.16.1-incubating/conf/druid/cluster
 - ~~数据需要提前计算(响应时间)~~
 - ~~case when 查询， 最大，最小~~
 
+
+
+192.168.1.20    pro-middleware-druid-20
+192.168.1.21    pro-middleware-druid-21
+192.168.1.22    pro-middleware-druid-22
+192.168.1.23    pro-middleware-druid-23
+
+修改机器名字
+
+```
+hostnamectl set-hostname pro-middleware-druid-23
+```
+
+9楼打印机，配置未变，详情如下：
+
+打印机地址：\\pc-print
+登录账号：Guest
+无密码

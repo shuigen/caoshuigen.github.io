@@ -5,6 +5,8 @@
 ```shell
 kafka-topics --list --zookeeper 172.16.8.38:2181,172.16.8.39:2181,172.16.8.40:2181/kafka 
 
+
+
 ```
 
 
